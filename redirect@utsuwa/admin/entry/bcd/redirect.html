@@ -1,0 +1,30 @@
+<!-- <form action="" method="post" class="js-validator" enctype="multipart/form-data"> -->
+<table class="acms-admin-table-admin-edit">
+  <tr>
+    <th>リダイレクト先
+      <label class="valid-mark" data-validator="redirect_url">
+        <span class="acms-admin-icon acms-admin-icon-checklist"></span>
+      </label>
+    </th>
+    <td>
+      <input type="text" name="redirect_url" value="{redirect_url}" class="acms-admin-form-width-full" data-validator="redirect_url" />
+      <input type="hidden" name="field[]" value="redirect_url" />
+    </td>
+  </tr>
+  <tr>
+    <th>リダイレクト秒数
+      <label class="valid-mark" data-validator="redirect_second">
+        <span class="acms-admin-icon acms-admin-icon-checklist"></span>
+      </label>
+    </th>
+    <td>
+      <input type="text" name="redirect_second" value="{redirect_second}" class="acms-admin-form-width-full" data-validator="redirect_second" placeholder="空欄の場合は0秒で移動" />
+      <input type="hidden" name="field[]" value="redirect_second" />
+      <input type="hidden" name="redirect_second:v#digits" value="" id="redirect_second-v-digits" />
+      <!-- BEGIN redirect_second:validator#digits -->
+      <p class="acms-admin-text-error">数字を入れてください。</p>
+      <!-- END redirect_second:validator#digits -->
+    </td>
+  </tr>
+</table>
+<!-- </form> -->
